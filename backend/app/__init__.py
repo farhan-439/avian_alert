@@ -1,7 +1,10 @@
 from flask import Flask
+from flask_cors import CORS
 from app.models.user import db
 from app.routes.auth_routes import auth_bp
-from flask_cors import CORS
+from app.routes.flock_routes import flock_bp
+from app.routes.audio_routes import audio_bp
+from app.routes.image_routes import image_bp
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
@@ -10,6 +13,10 @@ def create_app():
     db.init_app(app)
     CORS(app)
 
+    # Register all blueprints
     app.register_blueprint(auth_bp, url_prefix="/auth")
+    app.register_blueprint(flock_bp, url_prefix="/api/flocks")
+    app.register_blueprint(audio_bp, url_prefix="/api/audio")
+    app.register_blueprint(image_bp, url_prefix="/api/image")
 
     return app
