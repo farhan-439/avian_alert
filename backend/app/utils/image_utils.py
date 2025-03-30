@@ -1,10 +1,9 @@
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-from tensorflow.keras import layers
+from keras import layers  # ✅ Fixed import
 
-# Define any custom layer classes needed for your image model
-# If your image model also uses BurnLayer
+# Define custom BurnLayer for robustness
 class BurnLayer(layers.Layer):
     def __init__(self, burn_intensity=0.2, **kwargs):
         super(BurnLayer, self).__init__(**kwargs)
@@ -24,13 +23,12 @@ class BurnLayer(layers.Layer):
 def process_image(filepath, target_size=(224, 224)):
     # Load and preprocess image
     img = Image.open(filepath)
-    img = img.resize(target_size)  # Resize to match model input
-    img_array = np.array(img) / 255.0  # Normalize
-    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
+    img = img.resize(target_size)
+    img_array = np.array(img) / 255.0
+    img_array = np.expand_dims(img_array, axis=0)
     return img_array
 
 def load_image_model():
-    # Load the trained model with any custom objects
-    custom_objects = {"BurnLayer": BurnLayer}  # Add if your image model uses BurnLayer
+    custom_objects = {"BurnLayer": BurnLayer}
     model = tf.keras.models.load_model('models/image_model.h5', custom_objects=custom_objects)
     return model
