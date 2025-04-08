@@ -76,7 +76,7 @@ Our web-based dashboard provides:
 
 ## 🎬 Video Demo
 
-<video src="[https://github.com/farhan-439/avian_alert/issues/1#issue-2978525728](https://github.com/user-attachments/assets/ae1ab94e-8540-467f-96c0-c18d7744723d)" width="720" height="405" controls></video>
+<video src="https://private-user-images.githubusercontent.com/196995749/431199277-ae1ab94e-8540-467f-96c0-c18d7744723d.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQwODUyNjQsIm5iZiI6MTc0NDA4NDk2NCwicGF0aCI6Ii8xOTY5OTU3NDkvNDMxMTk5Mjc3LWFlMWFiOTRlLTg1NDAtNDY3Zi05NmMwLWMxOGQ3NzQ0NzIzZC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQwNDAyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNTM3ZDFiMmZlN2IxZTJiM2U0MzM5MzkxYTM2N2NmYjUxNzc0NmQ3YWZmMTFlYzFkMTQyNjk5ZDc4MWEwODZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gXRGEpaXzW7mSuxt7DeKjIsgcqFKxGspiM-JMJrLwuc" width="720" height="405" controls></video>
 
 
 ---
