@@ -76,7 +76,7 @@ Our web-based dashboard provides:
 
 ## 🎬 Video Demo
 
-[![Watch the Demo Video](https://img.youtube.com/vi/9Hm3L285lUQ/0.jpg)](https://youtu.be/9Hm3L285lUQ)
+<video src="[https://github.com/farhan-439/avian_alert/issues/1#issue-2978525728](https://github.com/user-attachments/assets/ae1ab94e-8540-467f-96c0-c18d7744723d)" width="720" height="405" controls></video>
 
 
 ---
