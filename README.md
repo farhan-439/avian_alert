@@ -1,128 +1,167 @@
 # 🐔 AvianAlert: Early Detection, Immediate Action
 
-A comprehensive AI monitoring system that helps farmers detect poultry diseases early through audio analysis and image classification. Developed for the Cornell Institute for Digital Agriculture Hackathon 2025.
+> 🏆 **First Prize – Data Science Track**  
+> 🏛️ *Cornell Institute for Digital Agriculture Hackathon 2025*
 
-![AvianAlert Logo](media/avian2.png)
+AvianAlert is a real-time AI system that detects poultry diseases early using sound and fecal image analysis.
+
+<p align="center">
+  <img src="media/avian2.png" alt="AvianAlert Logo" width="400"/>
+</p>
+
+---
+
+## 🎬 Live Demo
+
+<p align="center">
+  <video src="https://private-user-images.githubusercontent.com/196995749/431199277-ae1ab94e-8540-467f-96c0-c18d7744723d.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQwODUyNjQsIm5iZiI6MTc0NDA4NDk2NCwicGF0aCI6Ii8xOTY5OTU3NDkvNDMxMTk5Mjc3LWFlMWFiOTRlLTg1NDAtNDY3Zi05NmMwLWMxOGQ3NzQ0NzIzZC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQwNDAyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNTM3ZDFiMmZlN2IxZTJiM2U0MzM5MzkxYTM2N2NmYjUxNzc0NmQ3YWZmMTFlYzFkMTQyNjk5ZDc4MWEwODZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gXRGEpaXzW7mSuxt7DeKjIsgcqFKxGspiM-JMJrLwuc" width="720" height="405" controls></video>
+</p>
 
 ---
 
 ## 📊 The Problem
 
-Each year, millions of chickens die from disease. Recent outbreaks have been especially devastating:
+Each year, preventable poultry diseases cause devastating losses:
 
-- 💸 $600M in economic losses in the last quarter  
-- 🐔 20M dead chickens  
-- 🥚 96.4% increase in egg prices since last year  
-- 🌾 $100M in losses for American farmers  
-
----
-
-## 🧠 Our Solution
-
-AvianAlert addresses these challenges through three key components:
-
-1. **Flock Segmentation**  
-   Divides facilities into monitored zones to prevent rapid disease spread and enable precise outbreak identification  
-   ![Flock segmentation](media/Screenshot%202025-03-03%20at%202.52.08 PM.png)
-
-2. **AI Sound Analysis**  
-   Uses deep learning to classify poultry vocalizations and detect disease early  
-   ![AI sound analysis](media/AISoundOverview.png)
-
-3. **AI Excreta Analysis**  
-   Analyzes chicken droppings to identify specific diseases (Salmonella, NCD, Coccidiosis, Avian Flu)  
-   ![AI Excreta Analysis](media/Screenshot%202025-03-03%20at%202.52.26 PM.png)
+- 💸 **$600M** in economic damage (last quarter)  
+- 🐔 **20M** dead chickens  
+- 🥚 **96.4%** egg price increase year-over-year  
+- 🌾 **$100M** losses to American farmers
 
 ---
 
-## 🔬 Technical Implementation
+## 🧠 Solution Overview
 
-### 🎧 Audio Classification Model
+AvianAlert is an AI-driven monitoring tool built on three main components:
 
-A custom CNN with **Burn Layer** technology classifies poultry sounds into:
-- Healthy
-- Unhealthy
-- Noise (environmental)
+### 🔹 Flock Segmentation
 
-**Performance Metrics:**
-- 🎯 **Accuracy**: 91.38%
-- 🚨 **Unhealthy class**: 100% sensitivity (no sick birds missed)
-- 🔧 Uses mel spectrograms + CNN with Burn Layers for noise robustness
+- Divides poultry facilities into zones
+- Enables localized disease containment
 
----
-
-### 🖼️ Image Classification Model
-
-An **EfficientNetB0** architecture classifies chicken fecal images into:
-- Healthy
-- Salmonella
-- Newcastle Disease (NCD)
-- Coccidiosis
-- Avian Flu
+<p align="center">
+  <img src="media/Screenshot%202025-03-03%20at%202.52.08 PM.png" alt="Flock segmentation" width="600"/>
+</p>
 
 ---
 
-## 📊 Dashboard & User Interface
+### 🔹 AI Sound Analysis
 
-Our web-based dashboard provides:
-- Sound-based health indicators
-- Zone-wise outbreak mapping
-- Health risk analysis
-- Chicken count & migration risk  
-![Dashboard UI](media/IMG_8791.png)
+- Classifies poultry vocalizations in real time
+- Detects early signs of respiratory distress
+
+<p align="center">
+  <img src="media/AISoundOverview.png" alt="AI Sound Analysis" width="600"/>
+</p>
 
 ---
 
+### 🔹 AI Excreta Analysis
 
-## 🎬 Video Demo
+- Analyzes images of chicken droppings
+- Detects diseases like:
+  - Salmonella  
+  - Newcastle Disease (NCD)  
+  - Coccidiosis  
+  - Avian Flu
 
-<video src="https://private-user-images.githubusercontent.com/196995749/431199277-ae1ab94e-8540-467f-96c0-c18d7744723d.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQwODUyNjQsIm5iZiI6MTc0NDA4NDk2NCwicGF0aCI6Ii8xOTY5OTU3NDkvNDMxMTk5Mjc3LWFlMWFiOTRlLTg1NDAtNDY3Zi05NmMwLWMxOGQ3NzQ0NzIzZC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQwNDAyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNTM3ZDFiMmZlN2IxZTJiM2U0MzM5MzkxYTM2N2NmYjUxNzc0NmQ3YWZmMTFlYzFkMTQyNjk5ZDc4MWEwODZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gXRGEpaXzW7mSuxt7DeKjIsgcqFKxGspiM-JMJrLwuc" width="720" height="405" controls></video>
+<p align="center">
+  <img src="media/Screenshot%202025-03-03%20at%202.52.26 PM.png" alt="Excreta Analysis" width="600"/>
+</p>
 
+---
+
+## 🧪 Technical Architecture
+
+### 🎧 Audio Classification (CNN + Burn Layers)
+
+- Input: Mel spectrograms of vocalizations  
+- Classes: Healthy / Unhealthy / Noise  
+- Burn Layers ensure noise resilience
+
+**Key Metrics:**
+- ✅ Accuracy: 91.38%  
+- 🚨 100% sensitivity for unhealthy class  
+
+---
+
+### 🖼️ Image Classification (EfficientNetB0)
+
+- Input: Chicken fecal images (160x160)  
+- Model: Transfer learning with EfficientNetB0  
+- Output: Multi-class disease prediction  
+
+---
+
+## 💻 Dashboard
+
+Real-time web dashboard shows:
+
+- 🧠 Sound-based health indicators  
+- 🧭 Zone-specific outbreak tracking  
+- 📈 Risk scoring and migration alerts  
+- 🐔 Chicken count heatmaps  
+
+<p align="center">
+  <img src="media/IMG_8791.png" alt="Dashboard UI" width="600"/>
+</p>
 
 ---
 
 ## 🗣️ Pitch Video
 
-[Watch our Pitch on YouTube](https://youtu.be/WwGf5H9atKg)
+🎥 [Watch Our Hackathon Pitch on YouTube](https://youtu.be/WwGf5H9atKg)
 
 ---
 
-## 🌱 Sustainability Impact
+## 🌿 Sustainability Impact
 
-- 🐣 **Lower Carbon Footprint** — fewer deaths = less waste  
-- 🍳 **Food Security** — stable egg production = affordable protein  
-- 💰 **Farmer Profits** — fewer disease losses = better margins  
-
----
-
-## 📦 Market Readiness
-
-- ✅ Deployment-ready AI models
-- 📱 Minimal hardware needed (mic + smartphone)
-- 🌍 Scalable across farms and regions
+- 🌍 **Lower environmental footprint**  
+- 🍳 **More stable egg supply**  
+- 💼 **Improved farmer livelihoods**
 
 ---
 
-## 💵 Financial Overview
+## 🛠 Market Readiness
 
-- 🐔 Cost per chicken: **$0.08/year**
-- 💰 Potential revenue: **$100M**
-- 🌎 Global savings: **$2B**
-- 🧑‍🌾 Farm savings: **$500M**
+| Feature               | Status            |
+|----------------------|-------------------|
+| AI Model Training     | ✅ Completed       |
+| Real-time Monitoring  | ✅ Supported       |
+| Hardware Requirements | ✅ Mic + Phone     |
+| Deployment Potential  | 🚀 Field-ready     |
 
 ---
 
-## 👨‍💻 Team
+## 💰 Financial Overview
 
-- **Ahmed Abdulla**
-- **Farhan Mashrur**
-- **Suresh Kamath Bola**
+| Metric              | Value         |
+|---------------------|---------------|
+| Cost per Chicken     | $0.08/year    |
+| Potential Revenue    | $100M         |
+| Global Savings       | $2B           |
+| Farm Savings (US)    | $500M         |
+
+---
+
+## 🏆 Awards
+
+- 🥇 **First Prize – Data Science Track**  
+  Cornell Digital Agriculture Hackathon 2025
+
+---
+
+## 👥 Team
+
+- **Ahmed Abdulla**  
+- **Farhan Mashrur**  
+- **Suresh Kamath Bola**  
 - **Kiyam Merali**
 
 ---
 
 ## 📜 License
 
-**Educational Use License**
-
-This software is provided for educational and non-commercial purposes only. Commercial use requires explicit permission from the authors.
+**Educational Use License**  
+This project is provided for educational and non-commercial use.  
+Commercial use requires written permission from the authors.
