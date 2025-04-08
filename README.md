@@ -73,11 +73,11 @@ Our web-based dashboard provides:
 
 ---
 
+
 ## 🎬 Video Demo
 
-<div align="center">
-  <iframe width="720" height="405" src="https://www.youtube.com/embed/9Hm3L285lUQ" frameborder="0" allowfullscreen></iframe>
-</div>
+[![Watch the Demo Video](https://img.youtube.com/vi/9Hm3L285lUQ/0.jpg)](https://youtu.be/9Hm3L285lUQ)
+
 
 ---
 
