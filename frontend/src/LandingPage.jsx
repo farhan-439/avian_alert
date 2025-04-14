@@ -81,7 +81,7 @@ const LandingPage = () => {
           </div>
           
           {/* Right Column - Visualization */}
-          <div className="border rounded-xl shadow-lg bg-white overflow-hidden">
+          <div className="rounded-xl shadow-lg bg-white overflow-hidden hover:shadow-2xl transition-shadow duration-300 bg-gradient-to-b from-white to-gray-50">
             <JobBoardsFlow/>
           </div>
         </div>

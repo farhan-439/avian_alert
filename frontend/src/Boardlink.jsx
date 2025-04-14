@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const JobBoardsFlow = ({ width = '100%', height = '600px' }) => {
+const JobBoardsFlow = ({ width = '100%', height = '550px' }) => {
   // State for tracking job rows and animated dots
   const [rows, setRows] = useState([]);
   const [dots, setDots] = useState({});
@@ -230,8 +230,8 @@ const JobBoardsFlow = ({ width = '100%', height = '600px' }) => {
             </div>
             
             {/* Data rows container with fixed height */}
-            <div className="overflow-y-auto flex-grow" style={{ maxHeight: 'calc(100% - 68px)' }}>
-              {rows.map((row, index) => {
+            <div className="overflow-y-auto" >
+              {rows.map((row, index) => {   
                 // Determine status color classes
                 let statusClass = "bg-blue-100 text-blue-800";
                 if (row.status === 'Applied') statusClass = "bg-gray-100 text-gray-800";
